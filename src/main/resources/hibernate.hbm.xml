@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.indus.training.persist.entity">
+
+	<class name="Country" table="COUNTRIES">
+		<id name="countryId" column="COUNTRY_ID" length="2">
+		</id>
+		<property name="countryName" column="COUNTRY_NAME" length="40" not-null="true"/>
+		<property name="regionID" column="REGION_ID" />
+	</class>
+	<class name="Region" table="REGIONS">
+		<id name="regionId" column="REGION_ID">
+		</id>
+		<property name="regionName" column="REGION_NAME" />
+	</class>
+</hibernate-mapping>
